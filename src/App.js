@@ -1,15 +1,21 @@
 import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    //BEM naming
     <div className="app">
-      <h1>This is Going to become a Google Clone !</h1>
-      {/* Homepage (the one the search on ) */}
-      <Home />
-      {/* SearchPage (page where is results) */}
+      <Router>
+        <Switch>
+          <Route path="/search">
+            <h1>This is our search page</h1>
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
