@@ -7,7 +7,6 @@ import AppsIcon from "@material-ui/icons/Apps";
 function Home() {
   return (
     <div className="home">
-      <h1>This is Home Page</h1>
       <div className="home__header">
         <div className="header__headerLeft">
           <Link to="/about">About</Link>
@@ -20,7 +19,12 @@ function Home() {
           <Avatar />
         </div>
       </div>
-      <div className="home__body"></div>
+      <div className="home__body">
+        <img
+          src="https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt=""
+        />
+      </div>
     </div>
   );
 }
