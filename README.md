@@ -1,3 +1,5 @@
+This is going to become Google clone and hosted online (on firebase) so can be tried.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
