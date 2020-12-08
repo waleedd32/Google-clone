@@ -16,3 +16,12 @@
   font-size: medium;
   border: none;
 }
+
+.search__input > input:focus {
+  /* when user clicks input, the ugly borders dont come */
+  outline-width: 0;
+}
+
+.search__inputIcon {
+  color: gray;
+}
