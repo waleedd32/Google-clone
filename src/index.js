@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { StateProvider } from "./datalayer/StateProvider";
 
 ReactDOM.render(
   <React.StrictMode>
