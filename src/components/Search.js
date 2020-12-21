@@ -5,16 +5,25 @@ import MicIcon from "@material-ui/icons/Mic";
 import "./Search.css";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import { useStateValue } from "../datalayer/StateProvider";
+import { actionTypes } from "../datalayer/reducer";
+
 function Search({ hideButtons = false }) {
   const [input, setInput] = useState("");
+  const [{}, dispatch] = useStateValue();
   const history = useHistory();
 
   const search = (e) => {
     e.preventDefault();
 
     console.log("You just hit the search button -->", input);
-    // here we can do something with the input... then come back and fix
 
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    });
+
+    // here we can do something with the input... then come back and fix
     history.push("/search");
   };
 
