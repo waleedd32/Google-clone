@@ -1,12 +1,15 @@
 import React from "react";
 import { useStateValue } from "../datalayer/StateProvider";
+import Response from "../response";
 import useGoogleSearch from "../useGoogleSearch";
 import "./SearchPage.css";
 
 function SearchPage() {
   const [{ term = "michael jackson" }, dispatch] = useStateValue();
   // Live API CALL
-  const { data } = useGoogleSearch(term);
+  // const { data } = useGoogleSearch(term);
+
+  const data = Response;
 
   console.log(data);
   return (
