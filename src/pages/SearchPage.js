@@ -4,7 +4,7 @@ import Response from "../response";
 import useGoogleSearch from "../useGoogleSearch";
 import "./SearchPage.css";
 import { Link } from "react-router-dom";
-
+import Search from "../components/Search";
 function SearchPage() {
   const [{ term = "michael jackson" }, dispatch] = useStateValue();
   // Live API CALL
@@ -23,6 +23,9 @@ function SearchPage() {
             alt=""
           />
         </Link>
+      </div>
+      <div className="searchPage__headerBody">
+        <Search hideButtons />
       </div>
 
       <div className="searchPage__results"></div>
