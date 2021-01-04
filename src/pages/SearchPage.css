@@ -3,3 +3,13 @@
   height: 50px;
   margin-right: 50px;
 }
+.searchPage__header {
+  position: sticky;
+  display: flex;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  align-items: flex-start;
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+}

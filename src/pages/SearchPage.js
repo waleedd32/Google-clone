@@ -23,9 +23,9 @@ function SearchPage() {
             alt=""
           />
         </Link>
-      </div>
-      <div className="searchPage__headerBody">
-        <Search hideButtons />
+        <div className="searchPage__headerBody">
+          <Search hideButtons />
+        </div>
       </div>
 
       <div className="searchPage__results"></div>
