@@ -13,3 +13,10 @@
   padding: 30px;
   border-bottom: 1px solid lightgray;
 }
+
+.searchPage__headerBody > .search > .search__input {
+  margin-top: 0;
+  width: unset;
+  margin: unset;
+  max-width: unset;
+}
