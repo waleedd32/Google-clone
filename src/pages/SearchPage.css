@@ -39,3 +39,13 @@
 .searchPage__optionsRight {
   margin-left: 80px;
 }
+
+.searchPage__option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.searchPage__option a {
+  margin-left: 5px;
+}
