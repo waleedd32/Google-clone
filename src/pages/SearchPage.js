@@ -70,7 +70,13 @@ function SearchPage() {
           </div>
         </div>
       </div>
-
+      {true && (
+        <div className="searchPage__results">
+          <p className="sarchPage_resultCount">
+            About 4000 results (0.2 seconds ) for Apple
+          </p>
+        </div>
+      )}
       <div className="searchPage__results"></div>
     </div>
   );
