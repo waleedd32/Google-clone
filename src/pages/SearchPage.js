@@ -73,7 +73,9 @@ function SearchPage() {
       {true && (
         <div className="searchPage__results">
           <p className="sarchPage_resultCount">
-            About 4000 results (0.2 seconds ) for Apple
+            About {data?.searchInformation.formattedTotalResults}
+            results ({data?.searchInformation.formattedSearchTime} seconds) for
+            {term}
           </p>
         </div>
       )}
