@@ -77,9 +77,14 @@ function SearchPage() {
             results ({data?.searchInformation.formattedSearchTime} seconds) for
             {term}
           </p>
+
+          {data?.items.map((item) => (
+            <div className="searchPage__results">
+              <a href={item.link}>{item.displayLink}▽</a>
+            </div>
+          ))}
         </div>
       )}
-      <div className="searchPage__results"></div>
     </div>
   );
 }
