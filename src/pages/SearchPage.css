@@ -49,3 +49,12 @@
 .searchPage__option a {
   margin-left: 5px;
 }
+
+.searchPage__result {
+  margin: 40px 0;
+}
+
+.sarchPage_resultCount {
+  color: #70757a;
+  font-size: 14px;
+}
