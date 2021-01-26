@@ -1,8 +1,8 @@
 import React from "react";
-import { useStateValue } from "../datalayer/StateProvider";
-import Response from "../response";
-import useGoogleSearch from "../useGoogleSearch";
 import "./SearchPage.css";
+import { useStateValue } from "../datalayer/StateProvider";
+import useGoogleSearch from "../useGoogleSearch";
+import Response from "../response";
 import { Link } from "react-router-dom";
 import Search from "../components/Search";
 import SearchIcon from "@material-ui/icons/Search";
@@ -15,9 +15,10 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 function SearchPage() {
   const [{ term = "michael jackson" }, dispatch] = useStateValue();
   // Live API CALL
-  // const { data } = useGoogleSearch(term);
+  const { data } = useGoogleSearch(term);
 
-  const data = Response;
+  //Mock API CALL for testing response.js, comment Live API CALL if you want to use this
+  // const data = Response;
 
   console.log(data);
   return (
@@ -70,7 +71,8 @@ function SearchPage() {
           </div>
         </div>
       </div>
-      {true && (
+      {/* put here 'true &&' if you want to test with response.js*/}
+      {term && (
         <div className="searchPage__results">
           <p className="sarchPage_resultCount">
             About {data?.searchInformation.formattedTotalResults}
@@ -80,7 +82,17 @@ function SearchPage() {
 
           {data?.items.map((item) => (
             <div className="searchPage__result">
-              <a href={item.link}>{item.displayLink} ▽</a>
+              <a href={item.link}>
+                {item.pagemap?.cse_image?.length > 0 &&
+                  item.pagemap?.cse_image[0]?.src && (
+                    <img
+                      className="searchPage__resultImage"
+                      src={item.pagemap?.cse_image[0]?.src}
+                      alt=""
+                    />
+                  )}
+                {item.displayLink} ▽
+              </a>
               <a className="searchPage__resultTitle" href={item.link}>
                 <h2>{item.title}</h2>
               </a>

@@ -9,8 +9,9 @@ import { useStateValue } from "../datalayer/StateProvider";
 import { actionTypes } from "../datalayer/reducer";
 
 function Search({ hideButtons = false }) {
-  const [input, setInput] = useState("");
   const [{}, dispatch] = useStateValue();
+  const [input, setInput] = useState("");
+
   const history = useHistory();
 
   const search = (e) => {
