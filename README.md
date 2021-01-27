@@ -1,5 +1,7 @@
 This is going to become Google clone and hosted online (on firebase) so can be tried.
 
+- [Click here to view the project](https://clone-ad473.web.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
