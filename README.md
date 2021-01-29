@@ -2,6 +2,36 @@ This is going to become Google clone and hosted online (on firebase) so can be t
 
 - [Click here to view the project](https://clone-ad473.web.app)
 
+# Google-clone
+
+- Coded using React Hooks
+
+## Setup an Run
+
+- Clone this repository.
+- Setup Firebase(See below (For free Firebase hosting(deploy))
+- Create Google account (Get API key)
+- Install Dependencies.
+- After setup Firebase and installed Dependencies, you can run application
+
+### Firebase (this is just for deploying)
+
+- Visit [console](https://console.firebase.google.com)
+- Create Project. (Project name can be anything.)
+
+### Custom search API
+
+- Create Gmail [create account](https://mail.google.com/mail/u/0/)
+- Get your own custom search API key (https://developers.google.com/custom-search/v1/introduction#identify_your_application_to_google_with_api_key)
+
+## Dependencies
+
+- [Firebase](https://firebase.google.com/docs)
+
+Made with :heart: by Valid
+
+- [Click here to view project](https://clone-ad473.web.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
