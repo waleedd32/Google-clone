@@ -24,6 +24,10 @@ This is going to become Google clone and hosted online (on firebase) so can be t
 - Create Gmail [create account](https://mail.google.com/mail/u/0/)
 - Get your own custom search API key (https://developers.google.com/custom-search/v1/introduction#identify_your_application_to_google_with_api_key)
 
+### Create search engine & get context API/Search engine ID
+
+- Create search engine, get context key [create account](https://cse.google.com/cse/create/new)
+
 ## Dependencies
 
 - [Firebase](https://firebase.google.com/docs)
