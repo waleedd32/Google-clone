@@ -26,7 +26,7 @@ This is going to become Google clone and hosted online (on firebase) so can be t
 
 ### Create search engine & get context API/Search engine ID
 
-- Create search engine, get context key [create account](https://cse.google.com/cse/create/new)
+- Create search engine, get context key: [Programmable Search](https://cse.google.com/cse/create/new)
 
 ## Dependencies
 
