@@ -22,7 +22,7 @@ This is going to become Google clone and hosted online (on firebase) so can be t
 ### Custom search API
 
 - Create Gmail [create account](https://mail.google.com/mail/u/0/)
-- Get your own custom search API key (https://developers.google.com/custom-search/v1/introduction#identify_your_application_to_google_with_api_key)
+- Get your own [custom search API key](https://developers.google.com/custom-search/v1/introduction#identify_your_application_to_google_with_api_key)
 
 ### Create search engine & get context API/Search engine ID
 
