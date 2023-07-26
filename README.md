@@ -1,10 +1,16 @@
-This is going to become Google clone and hosted online (on firebase) so can be tried.
+# Google-clone
+
+This project is a Google homepage clone made with React.js. It includes a search functionality that uses Google's Custom Search JSON API to display search results, mimicking the actual Google Search engine's functionality. Furthermore, this project has been hosted online on Firebase, which means it can be tried
 
 - [Click here to view the project](https://clone-ad473.web.app)
 
-# Google-clone
+## Key Features
 
-- Coded using React Hooks
+- Responsive React-based Google Search clone.
+- Utilizes Google's Custom Search JSON API to fetch search results.
+- Integrated with react-router for navigation.
+- State management with the use of Context API.
+- Material UI for some icons and components.
 
 ## Setup an Run
 
